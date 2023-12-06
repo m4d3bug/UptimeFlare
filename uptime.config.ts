@@ -31,7 +31,7 @@ const config = {
     {
       id: 'Blog',
       name: 'Blog',
-      method: 'POST',
+      method: 'GET',
       target: 'https://blog.madebug.net',
       expectedCodes: [200],
       timeout: 10000,
@@ -40,7 +40,7 @@ const config = {
     {
       id: 'lB-00',
       name: 'lb-00',
-      method: 'POST',
+      method: 'GET',
       target: 'https://lb-00.m4d3bug.com',
       expectedCodes: [200],
       timeout: 10000,
@@ -49,7 +49,7 @@ const config = {
     {
       id: 'lB-01',
       name: 'lb-01',
-      method: 'POST',
+      method: 'GET',
       target: 'https://lb-01.m4d3bug.com',
       expectedCodes: [200],
       timeout: 10000,
@@ -58,7 +58,7 @@ const config = {
     {
       id: 'lB-02',
       name: 'lb-02',
-      method: 'POST',
+      method: 'GET',
       target: 'https://lb-02.m4d3bug.com',
       expectedCodes: [200],
       timeout: 10000,
@@ -66,9 +66,9 @@ const config = {
     },
     {
       id: 'Whoogle',
-      name: 'lb-03',
-      method: 'POST',
-      target: 'https://lb-03.m4d3bug.com',
+      name: 'Whoogle',
+      method: 'GET',
+      target: 'https://whoogle.madebug.net',
       expectedCodes: [200],
       timeout: 10000,
 
@@ -76,7 +76,7 @@ const config = {
     {
       id: 'AI',
       name: 'AI',
-      method: 'POST',
+      method: 'GET',
       target: 'https://ai.madebug.net',
       expectedCodes: [200],
       timeout: 10000,
