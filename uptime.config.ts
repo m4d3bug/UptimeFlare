@@ -5,12 +5,16 @@ const config = {
   timezone: 'Asia/Shanghai',
   page: {
     // Title for your status page
-    title: "lyc8503's Status Page",
+    title: "m4d3bug's Status Page",
     // Links shown at the header of your status page, could set `highlight` to `true`
     links: [
-      { link: 'https://github.com/lyc8503', label: 'GitHub' },
-      { link: 'https://blog.lyc8503.site/', label: 'Blog' },
-      { link: 'mailto:me@lyc8503.site', label: 'Email Me', highlight: true },
+      { link: 'https://blog.madebug.net', label: 'Blog' },
+      { link: 'https://lb-00.m4d3bug.com', label: 'LB-00' },
+      { link: 'https://lb-01.m4d3bug.com', label: 'LB-01' },
+      { link: 'https://lb-02.m4d3bug.com', label: 'LB-02' },
+      { link: 'https://whoogle.madebug.net', label: 'Whoogle' },
+      { link: 'https://ai.madebug.net', label: 'AI' },
+      // { link: 'mailto:me@lyc8503.site', label: 'Email Me', highlight: true },
     ],
   },
   callback: async (statusChangeMsg: string) => {
