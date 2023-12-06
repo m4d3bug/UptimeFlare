@@ -86,7 +86,7 @@ const config = {
       id: 'google_dns_monitor',
       name: 'Google DNS Monitor',
       // `method` should be `TCP_PING` for tcp monitors
-      method: 'UDP_PING',
+      method: 'TCP_PING',
       // `target` should be `host:port` for tcp monitors
       target: '8.8.4.4:53',
       tooltip: 'For fun',
