@@ -35,7 +35,7 @@ const config = {
       target: 'https://blog.madebug.net',
       expectedCodes: [200],
       timeout: 10000,
-      responseKeyword: 'success',
+
     },
     {
       id: 'lB-00',
@@ -44,7 +44,7 @@ const config = {
       target: 'https://lb-00.m4d3bug.com',
       expectedCodes: [200],
       timeout: 10000,
-      responseKeyword: 'success',
+
     },
     {
       id: 'lB-01',
@@ -53,7 +53,7 @@ const config = {
       target: 'https://lb-01.m4d3bug.com',
       expectedCodes: [200],
       timeout: 10000,
-      responseKeyword: 'success',
+
     },
     {
       id: 'lB-02',
@@ -71,7 +71,7 @@ const config = {
       target: 'https://lb-03.m4d3bug.com',
       expectedCodes: [200],
       timeout: 10000,
-      responseKeyword: 'success',
+
     },
     {
       id: 'AI',
@@ -80,7 +80,7 @@ const config = {
       target: 'https://ai.madebug.net',
       expectedCodes: [200],
       timeout: 10000,
-      responseKeyword: 'success',
+
     },
     // Example TCP Monitor
     {
