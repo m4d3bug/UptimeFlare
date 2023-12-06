@@ -25,39 +25,68 @@ const config = {
   monitors: [
     // Example HTTP Monitor
     {
-      // `id` should be unique, history will be kept if the `id` remains constant
-      id: 'foo_monitor',
-      // `name` is used at status page and callback message
-      name: 'My API Monitor',
-      // `method` should be a valid HTTP Method
+      id: 'Blog',
+      name: 'Blog',
       method: 'POST',
-      // `target` is a valid URL
-      target: 'https://example.com',
-      // [OPTIONAL] `tooltip` is only used at status page to show a tooltip
-      tooltip: 'This is a tooltip for this monitor',
-      // [OPTIONAL] `expectedCodes` is an array of acceptable HTTP response codes, if not specified, default to 2xx
+      target: 'https://blog.madebug.net',
       expectedCodes: [200],
-      // [OPTIONAL] `timeout` in millisecond, if not specified, default to 10000
       timeout: 10000,
-      // [OPTIONAL] headers to be sent
-      headers: {
-        'User-Agent': 'Uptimeflare',
-        Authorization: 'Bearer YOUR_TOKEN_HERE',
-      },
-      // [OPTIONAL] body to be sent
-      body: 'Hello, world!',
-      // [OPTIONAL] if specified, the response must contains the keyword to be considered as operational.
+      responseKeyword: 'success',
+    },
+    {
+      id: 'lB-00',
+      name: 'lb-00',
+      method: 'POST',
+      target: 'https://lb-00.m4d3bug.com',
+      expectedCodes: [200],
+      timeout: 10000,
+      responseKeyword: 'success',
+    },
+    {
+      id: 'lB-01',
+      name: 'lb-01',
+      method: 'POST',
+      target: 'https://lb-01.m4d3bug.com',
+      expectedCodes: [200],
+      timeout: 10000,
+      responseKeyword: 'success',
+    },
+    {
+      id: 'lB-02',
+      name: 'lb-02',
+      method: 'POST',
+      target: 'https://lb-02.m4d3bug.com',
+      expectedCodes: [200],
+      timeout: 10000,
+      responseKeyword: 'success',
+    },
+    {
+      id: 'Whoogle',
+      name: 'lb-03',
+      method: 'POST',
+      target: 'https://lb-03.m4d3bug.com',
+      expectedCodes: [200],
+      timeout: 10000,
+      responseKeyword: 'success',
+    },
+    {
+      id: 'AI',
+      name: 'AI',
+      method: 'POST',
+      target: 'https://ai.madebug.net',
+      expectedCodes: [200],
+      timeout: 10000,
       responseKeyword: 'success',
     },
     // Example TCP Monitor
     {
-      id: 'test_tcp_monitor',
-      name: 'Example TCP Monitor',
+      id: 'google_dns_monitor',
+      name: 'Google DNS Monitor',
       // `method` should be `TCP_PING` for tcp monitors
-      method: 'TCP_PING',
+      method: 'UDP_PING',
       // `target` should be `host:port` for tcp monitors
-      target: '1.2.3.4:22',
-      tooltip: 'My production server SSH',
+      target: '8.8.4.4:53',
+      tooltip: 'For fun',
       timeout: 5000,
     },
   ],
