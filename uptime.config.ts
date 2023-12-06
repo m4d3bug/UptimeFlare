@@ -62,7 +62,6 @@ const config = {
       target: 'https://lb-02.m4d3bug.com',
       expectedCodes: [200],
       timeout: 10000,
-      responseKeyword: 'success',
     },
     {
       id: 'Whoogle',
